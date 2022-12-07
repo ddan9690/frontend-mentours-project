@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+:root{
+    --red:hsl(10, 79%, 65%);
+    --Darkbrown: hsl(25, 47%, 15%);
+    --Mediumbrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Verypaleorange: hsl(33, 100%, 98%);
+    --bluelight:hsl(186, 34%, 60%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+   
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--Cream);
+    font-size: 1.125rem;
+}
+.wrapper{
+    padding: 2rem;
+    max-width: 450px;
+    width: 100%; 
+}
+.wrapper header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--red);
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+.wrapper header p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: .8rem;
+}
+.wrapper header h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.3rem;
+
+}
+/* circular icons */
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  .black-circle {
+    background-color: black;
+  }
+  .white-circle {
+    background: transparent;
+    left: -10px;
+    top: -20px;
+    border: 1px solid #fff;
+  }
+
+  .main-body{
+    background: #fff;
+    padding: 2rem;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+  }
+  .main-body .spending{
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 1.3rem;
+  }
+
+.totals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.this-month p, .last-month p:last-child{
+    font-weight: 200;
+    font-size: .95rem;
+    color: var(--text-light);
+}
+.this-month h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.attribution{
+    padding: .9rem;
+    background: var(--Darkbrown);
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.attribution a{
+    color: yellowgreen;
+}

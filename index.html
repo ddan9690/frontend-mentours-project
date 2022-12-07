@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+    <header>
+        <div class="balance">
+            <p>My Balance</p>
+            <h2>&#36;921.48</h2>
+        </div>
+        <div>
+            <div class="circle black-circle"></div>
+            <div class="circle white-circle"></div>
+        </div>
+    </header>
+    <div class="main-body">
+        <h2 class="spending">Spending - Last 7 days </h2>
+       <div class="chart">
+        <canvas id="myChart" width="50" height="50"></canvas>
+       </div>
+       <hr>
+       <div class="totals">
+        <div class="this-month">
+            <p>Total this month</p>
+            <h2>&#36;478.33</h2>
+        </div>
+        <div class="last-month">
+            <p>&plus;24&percnt;</p>
+            <p>form last month</p>
+        </div>
+       </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Dancan Otieno</a>.
+      </div>
+   </div>
+<!-- 
+  My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month -->
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+ <script src="script.js"></script>
+</body>
+</html>
